@@ -181,7 +181,7 @@ int main(void)
     /* USER CODE END WHILE */
 	  char data[11] = "0123456789";
 	  memcpy(net_senddatabuf, &data, sizeof(data));
-	  ES_send_udp_data1(net_sendbuf ,sizeof(data), 26524, remote_ip, 85);
+	  ES_send_udp_data2(net_sendbuf ,remote_mac ,sizeof(data), 26524, remote_ip, 85);
 	  counter++;
 	  HAL_Delay(2000);
     /* USER CODE BEGIN 3 */
